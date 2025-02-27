@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 
@@ -138,5 +138,5 @@ h2 {
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #ff9100;
+    background-color: #9837be;
 }
