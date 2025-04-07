@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #9b00f5;
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -21,7 +24,7 @@ section {
 
 
 .nav-link {
-    color: #000000;
+    color: #CB6D43;
     font-weight: 600;
 }
 
@@ -131,14 +134,14 @@ h2 {
 }
 
 .formulario button {
-    background-color: #ffffff;
+    background-color: #CB6D43;
     border: none;
     font-weight: bold;
 }
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #9837be;
+    background-color: #F1EDEF;
 }
 .menu-acessibilidade{
     position: fixed;
@@ -151,10 +154,41 @@ h2 {
     transform-origin: right center;
 }
 .opcoes-acessibilidade{
-    margin-top:10px;
-    diplay:flex;
+    margin-top: 10px;
+    display:flex;
     flex-direction: column;
 }
 .opcoes-acessibilidade button{
     margin-top: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color:var(--alto-contraste-texto);
+}
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+.alto-contraste #tropicalia{
+    background: none;
+}
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria{
+    background: none;
 }
